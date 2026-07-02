@@ -41,9 +41,13 @@ GitHub push confirmation: Pushed branch main to GitHub. GitHub shows the reposit
 
 ## Sprint 2 summary
 
-Sprint 2 theme:
+Sprint 2 theme: Missing-value percentages per column
 
-Codex prompt before editing sprint2.md:
+
+
+Codex prompt before editing sprint2.md: Read docs/specs/sprint2.md and the current Sprint 1 implementation. Help me rewrite sprint2.md for Sprint 2. The Sprint 2 theme is missing-value percentages per column. Sprint 2 should keep all Sprint 1 behavior, and add a missing-value summary that reports the number and percentage of missing cells for each column. Treat empty strings and whitespace-only cells as missing. Do not edit code yet. Before editing sprint2.md, summarize what Sprint 2 should accomplish and confirm that it keeps all Sprint 1 behavior.
+
+
 
 Implementation check process and findings:
 
