@@ -49,15 +49,27 @@ Codex prompt before editing sprint2.md: Read docs/specs/sprint2.md and the curre
 
 
 
-Implementation check process and findings:
+Implementation check process and findings: I ran uv run main.py data/test.csv and confirmed that Sprint 1 behavior still worked. The tool reported 262 data rows, printed the column names, and showed the first five preview rows. I also checked the missing-value summary and confirmed that it printed missing counts and percentages for each column in header order. For example, closed\_at had 72 missing values, which was 27.48%, and columns with no missing values showed 0 missing and 0.00%.
 
-Sprint 2 commit:
 
-Sprint 2 push confirmation:
 
-Sprint 2 definition of done check:
+Sprint 2 commit: Implement sprint 2 missing-value summary
 
-## Workflow reflection
+
+
+Sprint 2 push confirmation: Pushed Sprint 2 implementation to GitHub.
+
+
+
+Sprint 2 definition of done check: Sprint 2 met the definition of done. The tool keeps all Sprint 1 behavior and adds a missing-value summary for every column. Empty and whitespace-only cells are counted as missing, percentages are shown with two decimal places, and the README documents the new output.
+
+
+
+## **Workflow reflection**
+
+
+
+
 
 ## Practicum feedback
 

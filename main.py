@@ -1,4 +1,4 @@
-"""Print a basic structural summary of a CSV file."""
+"""Print a structural and missing-value summary of a CSV file."""
 
 import csv
 import sys
@@ -8,8 +8,8 @@ from pathlib import Path
 PREVIEW_SIZE = 5
 
 
-def inspect_csv(path: Path) -> tuple[list[str], int, list[list[str]]]:
-    """Return the header, data-row count, and first five data rows."""
+def inspect_csv(path: Path) -> tuple[list[str], int, list[list[str]], list[int]]:
+    """Return the header, row count, preview, and missing counts."""
     with path.open("r", encoding="utf-8-sig", newline="") as csv_file:
         reader = csv.reader(csv_file, strict=True)
 
@@ -22,13 +22,17 @@ def inspect_csv(path: Path) -> tuple[list[str], int, list[list[str]]]:
             raise ValueError("the CSV file is empty or has no usable header")
 
         preview: list[list[str]] = []
+        missing_counts = [0] * len(header)
         row_count = 0
         for row in reader:
             row_count += 1
+            for index in range(len(header)):
+                if index >= len(row) or not row[index].strip():
+                    missing_counts[index] += 1
             if len(preview) < PREVIEW_SIZE:
                 preview.append(row)
 
-    return header, row_count, preview
+    return header, row_count, preview, missing_counts
 
 
 def main(arguments: list[str] | None = None) -> int:
@@ -46,7 +50,7 @@ def main(arguments: list[str] | None = None) -> int:
         return 1
 
     try:
-        header, row_count, preview = inspect_csv(path)
+        header, row_count, preview, missing_counts = inspect_csv(path)
     except ValueError as error:
         print(f"Error: {error}.", file=sys.stderr)
         return 1
@@ -65,6 +69,12 @@ def main(arguments: list[str] | None = None) -> int:
     print("Preview:")
     for row in preview:
         print(row)
+    print("Missing-value summary:")
+    for column, missing_count in zip(header, missing_counts):
+        missing_percentage = (
+            missing_count / row_count * 100 if row_count else 0.0
+        )
+        print(f"{column}: {missing_count} missing ({missing_percentage:.2f}%)")
 
     return 0
 
