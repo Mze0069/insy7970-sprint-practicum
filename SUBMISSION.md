@@ -69,9 +69,17 @@ Sprint 2 definition of done check: Sprint 2 met the definition of done. The tool
 
 
 
+I learned that using a sprint workflow makes the project easier to control. Writing the spec before coding helped me understand exactly what the tool should do. I also learned that I should ask Codex to inspect and summarize first, then approve specific edits. Checking the output, reading the Git diff, committing after each sprint, and pushing to GitHub helped me keep the work organized and recoverable.
+
 
 
 ## Practicum feedback
 
+This practicum was useful because it connected uv, Git, GitHub, Codex, and a small Python project in one workflow. The most challenging part was managing Git commits, pushes, and terminal output, but after repeating the process it became clearer. I think this practice will help me use Codex more safely for future programming assignments and research projects.
+
 ## Unresolved question
+
+One question I still have is how to decide the best level of detail for a sprint specification before asking Codex to implement the code.
+
+
 
