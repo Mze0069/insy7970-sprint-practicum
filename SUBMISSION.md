@@ -15,7 +15,7 @@ Starting result: uv run main.py worked and printed "Hello from insy7970-sprint-p
 
 Files created by uv init: uv init created a Python project scaffold including main.py, pyproject.toml, README.md, .python-version, uv.lock after running, and a Git repository. It also created a .venv folder for the project environment.
 
-.gitignore confirmation: .gitignore excludes .venv/, __pycache__/, .pytest_cache/, .ruff_cache/, .mypy_cache/, .DS_Store, environment files, coverage output, build/dist artifacts, editor folders, and *.pyc files.
+.gitignore confirmation: .gitignore excludes .venv/, **pycache**/, .pytest\_cache/, .ruff\_cache/, .mypy\_cache/, .DS\_Store, environment files, coverage output, build/dist artifacts, editor folders, and \*.pyc files.
 
 ## Sprint 1 summary
 
@@ -33,7 +33,7 @@ File inspected: I inspected data/test.csv with head -n 6 data/test.csv. I checke
 
 Definition of done check: Sprint 1 met the definition of done. The tool accepts a CSV path, reports the row count without counting the header, prints the column names, and shows five preview rows. I confirmed the output by comparing it with data/test.csv using head. The README includes run instructions, and the program gives user-friendly errors instead of a Python traceback.
 
-Sprint 1 commit:
+Sprint 1 commit:Implement sprint 1
 
 GitHub push confirmation:
 

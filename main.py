@@ -37,7 +37,7 @@ def main(arguments: list[str] | None = None) -> int:
 
     if len(arguments) != 1:
         print("Error: provide exactly one CSV file path.", file=sys.stderr)
-        print("Usage: python main.py <csv-file>", file=sys.stderr)
+        print("Usage: uv run main.py <csv-file>", file=sys.stderr)
         return 2
 
     path = Path(arguments[0])
