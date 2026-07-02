@@ -3,7 +3,7 @@
 Operating system: Windows
 Terminal used: Git Bash
 Codex tool used: Codex CLI through PowerShell
-GitHub repository URL:
+GitHub repository URL: https://github.com/Mze0069/insy7970-sprint-practicum
 
 ## Setup notes
 
@@ -35,7 +35,9 @@ Definition of done check: Sprint 1 met the definition of done. The tool accepts 
 
 Sprint 1 commit: Implement sprint 1
 
-GitHub push confirmation:
+GitHub push confirmation: Pushed branch main to GitHub. GitHub shows the repository files and 4 commits.
+
+
 
 ## Sprint 2 summary
 
