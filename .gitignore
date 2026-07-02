@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+*.pyc
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Coverage output
+.coverage
+.coverage.*
+htmlcov/
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Editor folders
+.vscode/
+.idea/
