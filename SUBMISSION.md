@@ -33,7 +33,7 @@ File inspected: I inspected data/test.csv with head -n 6 data/test.csv. I checke
 
 Definition of done check: Sprint 1 met the definition of done. The tool accepts a CSV path, reports the row count without counting the header, prints the column names, and shows five preview rows. I confirmed the output by comparing it with data/test.csv using head. The README includes run instructions, and the program gives user-friendly errors instead of a Python traceback.
 
-Sprint 1 commit:Implement sprint 1
+Sprint 1 commit: Implement sprint 1
 
 GitHub push confirmation:
 
